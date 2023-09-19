@@ -4,11 +4,13 @@ using namespace std;
 
 int main()
 {
+    // Declare variables
     int fist_number;
     int second_number;
-    string operand;
+    char operand;
     int result;
 
+    // Collect user input
     cout << "Enter first number: ";
     cin >> fist_number;
     cout << "Enter second number: ";
@@ -16,6 +18,7 @@ int main()
     cout << "Enter operand: ";
     cin >> operand;
 
+    // Logic to calculate result
     if (operand == "+") {
         result = fist_number + second_number;
     } else if (operand == "*") {
@@ -31,6 +34,7 @@ int main()
         return -1;
     }
 
+    // Return result
     cout << fist_number << " " << operand << " " << second_number << " = " << result << endl;
 
     return 0;

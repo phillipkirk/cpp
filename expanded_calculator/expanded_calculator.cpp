@@ -4,11 +4,14 @@ using namespace std;
 
 int main()
 {
+    // Declare variables
     float fist_number;
     float second_number;
     string operand;
     float result;
 
+
+    // Collect user input
     cout << "Enter first number: ";
     cin >> fist_number;
     cout << "Enter second number: ";
@@ -16,6 +19,8 @@ int main()
     cout << "Enter operand: ";
     cin >> operand;
 
+
+    // Logic to calculate result
     if (operand == "+") {
         result = fist_number + second_number;
     } else if (operand == "*") {
@@ -29,6 +34,8 @@ int main()
         return -1;
     }
 
+
+    // Return result
     cout << fist_number << " " << operand << " " << second_number << " = " << result << endl;
 
     return 0;
